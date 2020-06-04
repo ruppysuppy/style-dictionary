@@ -171,7 +171,7 @@ describe('extend', () => {
     var StyleDictionaryExtended = StyleDictionary.extend(__dirname + '/__configs/test.json5');
     expect(StyleDictionaryExtended).toHaveProperty('platforms.web');
   });
-  
+
   it('should allow for chained extends and not mutate the original', function() {
     var StyleDictionary1 = StyleDictionary.extend({
       foo: 'bar'
